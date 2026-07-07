@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "ETL Dashboard Project"
+    return "ETL Dashboard Project.."
 
 
 if __name__ == "__main__":
