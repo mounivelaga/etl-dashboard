@@ -1,4 +1,4 @@
 order_id,customer_name,email,amount,order_date
-101,John,john@gmail.com,250,2026-06-20
-102,Alice,alice@gmail.com,300,2026-06-20
-103,Bob,bob@gmail.com,450,2026-06-20
+101, John ,JOHN@GMAIL.COM,250,06/20/2026
+102, Alice ,ALICE@GMAIL.COM,300,06/20/2026
+103, Bob ,BOB@GMAIL.COM,450,06/20/2026
