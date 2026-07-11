@@ -13,4 +13,4 @@ if errors:
     for error in errors:
         print("-", error)
 else:
-    print("Validation Successful")
+    print("Validation Successful.")
