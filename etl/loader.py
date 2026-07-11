@@ -30,4 +30,4 @@ class DataLoader:
 
         self.session.commit()
 
-        print(f"{len(data)} Records loaded sucessfully.")
+        print(f"{len(data)} Records loaded sucessfully..")
