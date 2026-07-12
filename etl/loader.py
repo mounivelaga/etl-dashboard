@@ -2,6 +2,7 @@ from sqlalchemy.orm import sessionmaker
 
 from database.connection import engine
 from database.models import Order
+from utils.logger import logger
 
 
 class DataLoader:
@@ -10,6 +11,7 @@ class DataLoader:
         self.session = session()
 
     def load(self, data):
+        logger.info("loading data into postgreSQL.")
         for _, row in data.iterrows():
             existing = (
                 self.session.query(Order).filter_by(order_id=row["order_id"]).first()
@@ -29,5 +31,7 @@ class DataLoader:
             self.session.add(order)
 
         self.session.commit()
+
+        logger.info(f"{len(data)} Records Inserted.")
 
         print(f"{len(data)} Records loaded sucessfully.")

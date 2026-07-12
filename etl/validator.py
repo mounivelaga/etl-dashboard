@@ -1,4 +1,5 @@
 import re
+from utils.logger import logger
 
 
 class DataValidator:
@@ -35,5 +36,7 @@ class DataValidator:
 
         if not invalid_emails.empty:
             errors.append("invalid email address found.")
+        else:
+            logger.info("Validation Sucessfull.")
 
         return errors
