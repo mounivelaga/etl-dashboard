@@ -20,4 +20,4 @@ st.markdown("---")
 
 st.subheader("orders")
 
-st.info("Database data will appear here in the next step.")
+st.info("Database data will appear here in the next step..")
